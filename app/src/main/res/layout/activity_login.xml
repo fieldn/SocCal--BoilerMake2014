@@ -10,78 +10,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".LoginActivity">
 
-    <!-- Login progress -->
-    <ProgressBar
-        android:id="@+id/login_progress"
-        style="?android:attr/progressBarStyleLarge"
+    <com.facebook.widget.LoginButton
+        android:id="@+id/authButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:visibility="gone"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="104dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/appName"
-        android:id="@+id/textView"
-        android:textStyle="bold"
-        android:gravity="top"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:clickable="false"
-        android:focusableInTouchMode="true"
-        android:singleLine="true"
-        android:paddingLeft="60dp" />
-
-    <ScrollView
-        android:id="@+id/login_form"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
-
-            <LinearLayout
-                android:id="@+id/email_login_form"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center_vertical"
-                android:weightSum="1">
-
-                <AutoCompleteTextView
-                    android:id="@+id/email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/prompt_email"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1"
-                    android:singleLine="true"/>
-
-                <EditText
-                    android:id="@+id/password"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/prompt_password"
-                    android:imeActionId="@+id/login"
-                    android:imeActionLabel="@string/action_sign_in_short"
-                    android:imeOptions="actionUnspecified"
-                    android:inputType="textPassword"
-                    android:maxLines="1"
-                    android:singleLine="true"/>
-
-                <Button
-                    android:id="@+id/email_sign_in_button"
-                    style="?android:textAppearanceSmall"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Sign in Through Facebook"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-    </ScrollView>
-
-</LinearLayout>
-
-
-
+    <!-- Login progress -->
