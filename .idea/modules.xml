@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/SocCal.iml" filepath="$PROJECT_DIR$/SocCal.iml" />
       <module fileurl="file://$PROJECT_DIR$/SocCal--BoilerMake2014.iml" filepath="$PROJECT_DIR$/SocCal--BoilerMake2014.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook/facebook.iml" filepath="$PROJECT_DIR$/facebook/facebook.iml" />
     </modules>
   </component>
 </project>
